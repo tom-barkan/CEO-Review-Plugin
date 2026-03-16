@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a12;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1020;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#121a2e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c45e4c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8845a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c45e4c;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#e8845a;stop-opacity:0.05" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.02" />
+    </linearGradient>
+    <linearGradient id="scoreGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#28c840;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#28c840;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient id="scoreYellow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#febc2e;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#febc2e;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient id="scoreRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff5f57;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#ff5f57;stop-opacity:0" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="20" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg)" rx="12"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="0.5">
+    <line x1="0" y1="50" x2="1200" y2="50"/>
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="250" x2="1200" y2="250"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="350" x2="1200" y2="350"/>
+    <line x1="100" y1="0" x2="100" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/>
+    <line x1="400" y1="0" x2="400" y2="400"/>
+    <line x1="500" y1="0" x2="500" y2="400"/>
+    <line x1="600" y1="0" x2="600" y2="400"/>
+    <line x1="700" y1="0" x2="700" y2="400"/>
+    <line x1="800" y1="0" x2="800" y2="400"/>
+    <line x1="900" y1="0" x2="900" y2="400"/>
+    <line x1="1000" y1="0" x2="1000" y2="400"/>
+    <line x1="1100" y1="0" x2="1100" y2="400"/>
+  </g>
+
+  <!-- Decorative glow orbs -->
+  <circle cx="950" cy="100" r="140" fill="url(#accent2)" filter="url(#softGlow)" opacity="0.5"/>
+  <circle cx="120" cy="340" r="90" fill="url(#accent2)" filter="url(#softGlow)" opacity="0.25"/>
+
+  <!-- Terminal window mockup (right side) - Scorecard -->
+  <g transform="translate(680, 40)">
+    <rect width="460" height="320" rx="10" fill="url(#cardGrad)" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1"/>
+    <!-- Terminal title bar -->
+    <rect width="460" height="32" rx="10" fill="#ffffff" fill-opacity="0.05"/>
+    <circle cx="18" cy="16" r="5" fill="#ff5f57" opacity="0.8"/>
+    <circle cx="36" cy="16" r="5" fill="#febc2e" opacity="0.8"/>
+    <circle cx="54" cy="16" r="5" fill="#28c840" opacity="0.8"/>
+    <text x="230" y="20" text-anchor="middle" font-family="monospace" font-size="11" fill="#ffffff" opacity="0.4">ceo review</text>
+
+    <!-- Scorecard content -->
+    <text x="16" y="58" font-family="monospace" font-size="12" fill="#c45e4c" font-weight="bold">SCORECARD</text>
+    <line x1="16" y1="64" x2="440" y2="64" stroke="#c45e4c" stroke-opacity="0.3" stroke-width="1"/>
+
+    <!-- Score rows -->
+    <text x="16" y="86" font-family="monospace" font-size="12" fill="#aaa">Strategic Alignment</text>
+    <text x="340" y="86" font-family="monospace" font-size="12" fill="#28c840" font-weight="bold">8/10</text>
+    <rect x="390" y="76" width="50" height="12" rx="2" fill="url(#scoreGreen)"/>
+
+    <text x="16" y="108" font-family="monospace" font-size="12" fill="#aaa">Market Opportunity</text>
+    <text x="340" y="108" font-family="monospace" font-size="12" fill="#febc2e" font-weight="bold">5/10</text>
+    <rect x="390" y="98" width="50" height="12" rx="2" fill="url(#scoreYellow)"/>
+
+    <text x="16" y="130" font-family="monospace" font-size="12" fill="#aaa">Defensibility / Moat</text>
+    <text x="340" y="130" font-family="monospace" font-size="12" fill="#febc2e" font-weight="bold">6/10</text>
+    <rect x="390" y="120" width="50" height="12" rx="2" fill="url(#scoreYellow)"/>
+
+    <text x="16" y="152" font-family="monospace" font-size="12" fill="#aaa">Distribution</text>
+    <text x="340" y="152" font-family="monospace" font-size="12" fill="#28c840" font-weight="bold">8/10</text>
+    <rect x="390" y="142" width="50" height="12" rx="2" fill="url(#scoreGreen)"/>
+
+    <text x="16" y="174" font-family="monospace" font-size="12" fill="#aaa">Unit Economics</text>
+    <text x="340" y="174" font-family="monospace" font-size="12" fill="#ff5f57" font-weight="bold">4/10</text>
+    <rect x="390" y="164" width="50" height="12" rx="2" fill="url(#scoreRed)"/>
+
+    <text x="16" y="196" font-family="monospace" font-size="12" fill="#aaa">Risk Profile</text>
+    <text x="340" y="196" font-family="monospace" font-size="12" fill="#febc2e" font-weight="bold">5/10</text>
+    <rect x="390" y="186" width="50" height="12" rx="2" fill="url(#scoreYellow)"/>
+
+    <line x1="16" y1="210" x2="440" y2="210" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+
+    <!-- Verdict -->
+    <text x="16" y="236" font-family="monospace" font-size="13" fill="#febc2e" font-weight="bold">VERDICT: DEFER</text>
+
+    <text x="16" y="262" font-family="monospace" font-size="11" fill="#888">Strong distribution but weak financial</text>
+    <text x="16" y="278" font-family="monospace" font-size="11" fill="#888">case. Define pricing model before</text>
+    <text x="16" y="294" font-family="monospace" font-size="11" fill="#888">committing engineering resources.</text>
+
+    <!-- Blinking cursor -->
+    <rect x="16" y="308" width="8" height="2" fill="#c45e4c" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Left side content -->
+  <!-- Sparkle icon -->
+  <g transform="translate(60, 65)">
+    <path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16 Z" fill="url(#accent1)" filter="url(#glow)" opacity="0.9"/>
+  </g>
+
+  <text x="60" y="155" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="46" fill="#ffffff" letter-spacing="-1">
+    CEO Review
+  </text>
+  <text x="60" y="195" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="18" fill="#c45e4c">
+    Claude Code Plugin
+  </text>
+
+  <text x="60" y="240" font-family="system-ui, -apple-system, sans-serif" font-weight="300" font-size="16" fill="#999999">
+    Stop building features that should have been
+  </text>
+  <text x="60" y="263" font-family="system-ui, -apple-system, sans-serif" font-weight="300" font-size="16" fill="#999999">
+    killed in the planning phase. Stress-test every
+  </text>
+  <text x="60" y="286" font-family="system-ui, -apple-system, sans-serif" font-weight="300" font-size="16" fill="#999999">
+    idea with strategy frameworks, real market
+  </text>
+  <text x="60" y="309" font-family="system-ui, -apple-system, sans-serif" font-weight="300" font-size="16" fill="#999999">
+    research, and a no-sugar-coating scorecard.
+  </text>
+
+  <!-- Framework badges -->
+  <g transform="translate(60, 330)">
+    <rect width="76" height="24" rx="4" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.1" stroke-width="0.5"/>
+    <text x="38" y="16" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#888">7 Powers</text>
+
+    <rect x="84" width="58" height="24" rx="4" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.1" stroke-width="0.5"/>
+    <text x="113" y="16" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#888">Porter</text>
+
+    <rect x="150" width="88" height="24" rx="4" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.1" stroke-width="0.5"/>
+    <text x="194" y="16" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#888">Blue Ocean</text>
+
+    <rect x="246" width="52" height="24" rx="4" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.1" stroke-width="0.5"/>
+    <text x="272" y="16" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#888">JTBD</text>
+
+    <rect x="306" width="94" height="24" rx="4" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.1" stroke-width="0.5"/>
+    <text x="353" y="16" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#888">TAM/SAM/SOM</text>
+
+    <rect x="408" width="74" height="24" rx="4" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.1" stroke-width="0.5"/>
+    <text x="445" y="16" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#888">Pre-Mortem</text>
+  </g>
+</svg>

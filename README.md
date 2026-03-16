@@ -1,8 +1,14 @@
-# CEO Review Plugin
+<p align="center">
+  <img src="assets/hero-banner.svg" alt="CEO Review - Claude Code Plugin" width="100%">
+</p>
 
-**Your AI-powered strategic advisor. Stop building. Start validating.**
+<p align="center">
+  <b>Your AI-powered strategic advisor. Stop building. Start validating.</b>
+</p>
 
-[Install](#installation) · [How It Works](#how-it-works) · [Examples](#examples) · [Components](#components) · [Contributing](#contributing)
+<p align="center">
+  <a href="#installation">Install</a> · <a href="#how-it-works">How It Works</a> · <a href="#examples">Examples</a> · <a href="#components">Components</a> · <a href="#contributing">Contributing</a>
+</p>
 
 ---
 
