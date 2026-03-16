@@ -1,0 +1,9 @@
+{
+  "name": "ceo-review",
+  "version": "0.1.0",
+  "description": "CEO-level strategic review for feature decisions. Challenges assumptions, applies strategy frameworks, and forces rigorous thinking before development begins.",
+  "author": {
+    "name": "Tom Barkan"
+  },
+  "keywords": ["strategy", "review", "ceo", "decision-making", "feature-evaluation"]
+}
